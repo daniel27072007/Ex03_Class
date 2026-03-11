@@ -131,10 +131,25 @@ int main()
 	
 	if (nun1 > 50){
 		nun2 = (nun1-50) * 1.05 + 50;
-		printf("valor a pagar = %.2f", nun2);
+		printf("valor a pagar = %.2f\n\n", nun2);
 	}
 	else{
-		printf("valor a pagar = 50");
+		printf("valor a pagar = 50\n\n");
 	}
+	
+	//exercicio 9
+	printf("ex_9\n");
+	printf("ano bisexto\n");
+	printf("digite um ano:");
+	scanf("%i", &num1);
+	fflush(stdin);
+	
+	if (num1 % 4 == 0 && num1 % 100 != 0 && num1 % 400 == 0){
+		printf("%i = bisexto", num1);
+	}
+	else{
+		printf("%i = normal", num1);
+	}
+	
 	return 0;
 }
